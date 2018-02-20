@@ -1,7 +1,7 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const bookmarkCollection = require('../models/bookmark-store.js');
+const bookmarkCollection = require('../models/bookmark-store');
 
 const bookmark = {
   index(request, response) {
@@ -11,7 +11,7 @@ const bookmark = {
       title: 'Bookmarks',
       bookmark: bookmarkCollection.getBookmark(bookid),
     };
-    response.render('bookmark', viewData);
+    response.render('bookmarks', viewData);
   },
   
 //   deleteSong(request, response) {

@@ -10,7 +10,7 @@ const dashboard = {
     logger.info('dashboard rendering');
     const viewData = {
       title: 'Bookmark Dashboard',
-      bookmarks: myBookmarks.getAllBookmarks(),
+      bookmark: myBookmarks.getAllBookmarks(),
     };
     logger.info('about to render', myBookmarks.getAllBookmarks());
     response.render('dashboard', viewData);
