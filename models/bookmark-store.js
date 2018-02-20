@@ -1,7 +1,17 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const bookmarksCollection = require('./bookmark-store.json').myBookmarkCollection;
+const bookmark = {
+    bookmarksCollection: require('./bookmark-store.json').myBookmarkCollection,
+    getAllBookmarks(){
+     return this.bookmarksCollection;
+    },
+  
+  
+  
+  
+};
 
 
-module.exports = bookmarksCollection;
+
+module.exports = bookmark;
