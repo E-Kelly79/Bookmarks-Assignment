@@ -5,25 +5,7 @@
     <h2 class="ui header">
       {{title}}
     </h2>
-    <table class="ui table">
-      <thead>
-        <tr>
-          <th>Song</th>
-          <th>Artist</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each bookmarks}}
-          <tr>
-            <td>
-              {{title}}
-            </td>
-            <td>
-              {{link}}
-            </td>
-          </tr>
-        {{/each}}
-      </tbody>
-    </table>
+    <!--<p> Total Bookmarks: {{noOfBookmarks}} </p>-->
+     <a href="/playlist/{{id}}"> View </a>
   </section>
 {{/each}}
