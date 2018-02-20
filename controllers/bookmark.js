@@ -5,15 +5,26 @@ const bookmarkCollection = require('../models/bookmark-store.js');
 
 const bookmark = {
   index(request, response) {
-     const bookmarkId = request.params.id;
-       logger.debug('Bookmark id = ',bookmarkId);
-    
+    const bookid = request.params.id;
+    logger.debug('bookmark id = ', bookid);
     const viewData = {
-      title: 'Bookmark',
-      bookmark: bookmarkCollection.getBookmark(bookmarkId),
+      title: 'Bookmarks',
+      bookmark: bookmarkCollection.getBookmark(bookid),
     };
-    response.render('Bookmark', viewData);
+    response.render('bookmark', viewData);
   },
+  
+//   deleteSong(request, response) {
+//     const playlistId = request.params.id;
+//     const songId = request.params.songid;
+//     logger.debug(`Deleting Song ${songId} from Playlist ${playlistId}`);
+//     playlistStore.removeSong(playlistId, songId);
+//     response.redirect('/playlist/' + playlistId);
+//   },
+  
+
 };
+
+ 
 
 module.exports = bookmark;
