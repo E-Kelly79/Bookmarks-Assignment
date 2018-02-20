@@ -2,7 +2,7 @@
 
 const logger = require('../utils/logger');
 
-const sonatas = require('../models/bookmark-store.js');
+const myBookmarks = require('../models/bookmark-store.js');
 
 
 const dashboard = {
@@ -10,9 +10,9 @@ const dashboard = {
     logger.info('dashboard rendering');
     const viewData = {
       title: 'Bookmark Dashboard',
-      bookmarks: sonatas,
+      bookmarks: myBookmarks.getAllBookmarks(),
     };
-    logger.info('about to render', sonatas);
+    logger.info('about to render', myBookmarks.getAllBookmarks());
     response.render('dashboard', viewData);
   },
 };

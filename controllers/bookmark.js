@@ -10,6 +10,7 @@ const bookmark = {
     
     const viewData = {
       title: 'Bookmark',
+      bookmark: bookmarkCollection.getBookmark(bookmarkId),
     };
     response.render('Bookmark', viewData);
   },
