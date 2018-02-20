@@ -1,15 +1,20 @@
   <table class="ui table">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Link</th>
+      <th>Song</th>
+      <th>Artist</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>
-      </td>
-      <td>
-      </td>
+    {{#each playlist.songs}}
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{link}}
+        </td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>
