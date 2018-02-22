@@ -1,24 +1,33 @@
-  <table class="ui table">
-  <thead>
-    <tr>
-      <th>Song</th>
-      <th>Artist</th>
-      <th>Delete Bookmark</th>
-    </tr>
-  </thead>
-  <tbody>
+<div class="ui grid">
+  <div class="row">  
     {{#each bookmark.bookmarks}}
-      <tr>
-        <td>
-          {{title}}
-        </td>
-        <td>
-          {{link}}
-        </td>
-         <td>
-          <a href="/bookmark/{{../bookmark.id}}/deletelink/{{id}}" class="ui tiny red button">Delete Bookmark</a>
-        </td>
-      </tr>
+      <div class="four wide column">
+        <div class="ui card">
+          <div class="image">
+            <img src="{{image}}">
+          </div>
+          <div class="content">
+            <a class="header">{{title}}</a>
+            <div class="description">
+              {{artist}}
+            </div>
+          </div>
+          <div class="extra content">
+            <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}"> <i class="trash icon"></i></a>
+          </div>
+        </div>
+      </div>
+        <tr>
+          <td>
+            {{title}}
+          </td>
+          <td>
+            {{link}}
+          </td>
+           <td>
+            <a href="/bookmark/{{../bookmark.id}}/deletelink/{{id}}" class="ui tiny red button">Delete Bookmark</a>
+          </td>
+        </tr>
     {{/each}}
-  </tbody>
-</table>
+  </div>
+</div>
