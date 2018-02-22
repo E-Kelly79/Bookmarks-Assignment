@@ -1,12 +1,5 @@
 {{> menu id="dashboard"}}
 
-{{#each bookmark}}
-  <section class="ui segment">
-    <h2 class="ui header">
-      {{title}}
-    </h2>
-    <!--<p> Total Bookmarks: {{noOfBookmarks}} </p>-->
-     <a href="/bookmark/{{id}}"> View </a>
-    <a href="/dashboard/deletebookmark/{{id}}">Delete</a>
-  </section>
-{{/each}}
+<section class="ui segment">
+  {{> bookmarks}}
+</section>
