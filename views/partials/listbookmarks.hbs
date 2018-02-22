@@ -3,7 +3,7 @@
     {{#each bookmark.bookmarks}}
       <div class="four wide column">
         <div class="ui card">
-          <div class="image">
+          <div class="image fixed">
             <img src="{{image}}">
           </div>
           <div class="content">
@@ -17,17 +17,6 @@
           </div>
         </div>
       </div>
-        <tr>
-          <td>
-            {{title}}
-          </td>
-          <td>
-            {{link}}
-          </td>
-           <td>
-            <a href="/bookmark/{{../bookmark.id}}/deletelink/{{id}}" class="ui tiny red button">Delete Bookmark</a>
-          </td>
-        </tr>
     {{/each}}
   </div>
 </div>
