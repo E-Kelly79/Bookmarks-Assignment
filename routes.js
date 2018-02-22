@@ -12,7 +12,8 @@ router.get('/', start.index);
 router.get('/about', about.index);
 router.get('/dashboard', dashboard.index);
 router.get('/bookmark/:id', bookmark.index);
-router.get('/bookmark/:id/deletelink/:linkid', bookmark.deleteLink);
+router.get('/bookmark/:id/deletelink/:bookid', bookmark.deleteLink);
+//router.get('/playlist/:id/deletesong/:songid', playlist.deleteSong);
 //router.get('/dashboard/deletebookmark/:id', bookmark.deleteBookmark);
 
 
