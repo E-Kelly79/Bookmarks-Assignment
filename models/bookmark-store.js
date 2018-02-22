@@ -11,6 +11,7 @@ const bookmarkStore = {
   },
   
   getBookmark(id){
+    return
     let foundBookmark = null;
     for(let bookmark of this.bookmarksCollection){
        if(id == bookmark.id){

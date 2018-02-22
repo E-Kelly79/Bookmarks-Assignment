@@ -15,6 +15,13 @@ const dashboard = {
     logger.info('about to render', myBookmarks.getAllBookmarks());
     response.render('dashboard', viewData);
   },
+  
+  deleteBookmark(request, response){
+   const bookid = request.params.id;
+    logger.debug('Deleting BookMark ${bookid}');
+    myBookmarks.removeBookmark(bookid);
+    response.redirect('/dashboard');
+  }
 };
 
 module.exports = dashboard;

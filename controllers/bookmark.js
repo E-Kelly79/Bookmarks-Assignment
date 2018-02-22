@@ -14,11 +14,11 @@ const bookmark = {
     response.render('bookmarks', viewData);
   },
   
-  deleteSong(request, response) {
+  deleteLink(request, response) {
     const bookmarkId = request.params.id;
     const mybookmark = request.params.bookid;
     logger.debug(`Deleting Song ${mybookmark} from Playlist ${bookmarkId}`);
-    playlistStore.removeSong(bookmarkId, mybookmark);
+    bookmarkCollection.removeSong(bookmarkId, mybookmark);
     response.redirect('/bookmark/' + bookmarkId);
   },
   
