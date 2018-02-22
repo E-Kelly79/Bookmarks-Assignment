@@ -1,7 +1,29 @@
+<style>
+  #map{
+    width: 50%;
+    height: 500px;
+    background: grey;
+</style>
 {{> menu id="about"}}
 
 <section class="ui center aligned middle aligned segment">
   <p>
     A Little Bookmark Maker - Version 1
   </p>
+  
+  <div id="map"></div>
 </section>
+
+<script> 
+  function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>

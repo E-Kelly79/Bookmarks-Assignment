@@ -18,7 +18,7 @@ const dashboard = {
   
   deleteBookmark(request, response){
    const bookid = request.params.id;
-    logger.debug('Deleting BookMark ${bookid}');
+    //logger.debug('Deleting BookMark ${bookid}');
     myBookmarks.removeBookmark(bookid);
     response.redirect('/dashboard');
   }
