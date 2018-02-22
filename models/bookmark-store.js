@@ -1,5 +1,5 @@
 'use strict';
-
+const _ = require('lodash');
 const logger = require('../utils/logger');
 
 const bookmarkStore = {
@@ -11,15 +11,17 @@ const bookmarkStore = {
   },
   
   getBookmark(id){
-    return
-    let foundBookmark = null;
-    for(let bookmark of this.bookmarksCollection){
-       if(id == bookmark.id){
-           foundBookmark = bookmark;
-       }
-    }
-    return foundBookmark;
+    return _.find(this.bookmarksCollection, {id:id});
   },
+  
+  removeLink(id, bookid){
+   const link = this.getBookmark(id);
+    _.remove(this.bookmark.link, {id: bookid});
+  },
+  
+  removeBookmark(id){
+    _.remove(this.bookmarksCollection, {id:id});
+  }
 
 };
 

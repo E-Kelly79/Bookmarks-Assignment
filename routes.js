@@ -13,7 +13,7 @@ router.get('/about', about.index);
 router.get('/dashboard', dashboard.index);
 router.get('/bookmark/:id', bookmark.index);
 router.get('/bookmark/:id/deletelink/:linkid', bookmark.deleteLink);
-router.get('/dashboard/deletebookmark/:bookid', bookmark.deleteBookmark);
+//router.get('/dashboard/deletebookmark/:id', bookmark.deleteBookmark);
 
 
 module.exports = router;

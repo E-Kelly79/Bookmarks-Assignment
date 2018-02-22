@@ -18,7 +18,7 @@ const bookmark = {
     const bookmarkId = request.params.id;
     const mybookmark = request.params.bookid;
     logger.debug(`Deleting Song ${mybookmark} from Playlist ${bookmarkId}`);
-    bookmarkCollection.removeSong(bookmarkId, mybookmark);
+    bookmarkCollection.removeLink(bookmarkId, mybookmark);
     response.redirect('/bookmark/' + bookmarkId);
   },
   
