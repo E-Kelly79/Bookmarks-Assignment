@@ -1,0 +1,22 @@
+
+
+
+
+/*Map Styles*/
+.map-container{
+  overflow:hidden;
+  height:auto;
+  width:100%; 
+  text-align:center 
+}
+
+#gmap_canvas{
+   height:500px;
+   width:50%; 
+   display: inline-block; 
+}
+
+#gmap_canvas img{
+   max-width:none !important;
+   background:none!important;
+} 
