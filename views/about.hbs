@@ -1,9 +1,4 @@
-<style>
-  #map{
-    width: 50%;
-    height: 500px;
-    background: grey;
-</style>
+
 {{> menu id="about"}}
 
 <section class="ui center aligned middle aligned segment">
@@ -11,19 +6,30 @@
     A Little Bookmark Maker - Version 1
   </p>
   
-  <div id="map"></div>
-</section>
-
-<script> 
-  function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
+  <div id="map">
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD-RMuPJgcrvCmea02hEB7HzI7inBua1WI'></script>
+    <div style='overflow:hidden;height:500px;width:50%;'>
+      <div id='gmap_canvas' style='height:500px;width:50%;'>
+      </div>
+        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+      </div> <a href='https://addmap.net/'>how to add a google map to wordpress</a> 
+    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6f20e4f947d652a8513c22e629b0a98c90a4b9e0'></script>
+    <script type='text/javascript'>
+      function init_map(){
+        var myOptions = {
+          zoom:15,
+          center:new google.maps.LatLng(52.2583,-7.1118999999999915),
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.2583,-7.1118999999999915)});
+        infowindow = new google.maps.InfoWindow({content:'<strong>Company Headquaters</strong><br>connolly place<br> Waterford<br>'});
+        google.maps.event.addListener(marker, 'click', 
+                                      function(){
+          infowindow.open(map,marker);});
+        infowindow.open(map,marker);
       }
-</script>
+      google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+  </div>
+</section>
