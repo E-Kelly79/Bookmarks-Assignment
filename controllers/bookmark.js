@@ -16,7 +16,7 @@ const bookmark = {
   
   deleteLink(request, response) {
     const bookmarkId = request.params.id;
-    const mybookmark = request.params.bookid;
+    const mybookmark = request.params.linkid;
     logger.debug(`Deleting Song ${mybookmark} from Playlist ${bookmarkId}`);
     bookmarkCollection.removeLink(bookmarkId, mybookmark);
     response.redirect('/bookmark/' + bookmarkId);

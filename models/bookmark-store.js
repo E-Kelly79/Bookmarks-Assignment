@@ -16,7 +16,7 @@ const bookmarkStore = {
   
   removeLink(id, linkid){
    const link = this.getBookmark(id);
-    _.remove(this.link.bookmarks, {id: linkid});
+    _.remove(link.bookmarks, {id: linkid});
   },
   
   removeBookmark(id){
