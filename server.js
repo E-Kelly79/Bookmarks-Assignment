@@ -5,6 +5,14 @@ const logger = require('./utils/logger');
 const bodyParser = require('body-parser');
 var assets = require("./assets");
 const app = express();
+const sassMiddleware = require("node-sass-middleware");
+
+app.use(sassMiddleware({
+  src: __dirname + '/sass',
+  dest: '/tmp',
+  //debug: true,
+  //outputStyle: 'compressed',
+}));
 
 app.use("/assets", assets);
 const exphbs = require('express-handlebars');
