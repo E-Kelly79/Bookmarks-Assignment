@@ -8,8 +8,8 @@ const app = express();
 const sassMiddleware = require("node-sass-middleware");
 
 app.use(sassMiddleware({
-  src: __dirname + '/sass',
-  dest: '/tmp',
+  src: __dirname + '/public/sass',
+  dest: '/public/stylesheets',
   //debug: true,
   //outputStyle: 'compressed',
 }));
