@@ -27,6 +27,8 @@
   "keywords": [
     "node",
     "gomix",
-    "express"
-  ]
+    "express",
+    "sass"
+  ],
+  "license": "MIT"
 }

@@ -9,9 +9,7 @@ var sassMiddleware = require("node-sass-middleware");
 
 app.use(sassMiddleware({
   src: __dirname + '/public',
-  dest: '/temp',
-  debug: true,
-  outputStyle: 'compressed'
+  dest: '/temp'
 }));
 
 app.use("/assets", assets);
