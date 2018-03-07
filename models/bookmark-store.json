@@ -14,28 +14,28 @@
         {
           "id": "05",
           "title": "Code Academdy",
-          "link": "",
+          "link": "https://www.codecademy.com/",
           "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2FCodeacademy.jpg?1520464829174"
         },
         {
           "id": "06",
-          "title": "Code Wars",
-          "link": "Beethoven",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fcode-wars.png?1520465082856"
+          "title": "Free Code Camp",
+          "link": "https://www.freecodecamp.org/",
+          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fcodecamp.jpg?1520465305010"
         },
          {
           "id": "13",
-          "title": "Piano Sonata No. 10",
-          "link": "Beethoven",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fhtml53.png?1519316565656"
+          "title": "HTML5 Goddies",
+          "link": "https://www.htmlgoodies.com/html5/index.php",
+          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fhtml5blue.png?1520465450341"
         }
         
       ]
     },
     {
       "id": "02",
-      "title": "Beethoven Concertos",
-      "theImage": "https://cdn.glitch.com/c40293fa-9f2b-476b-8705-053345da2a54%2FBeethoven_3.jpg?1518482408419",
+      "title": "CSS3",
+      "theImage": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fdownload.png?1520465635486",
       "bookmarks": [
         {
           "id": "07",
