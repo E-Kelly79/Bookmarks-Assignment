@@ -8,7 +8,7 @@ const app = express();
 var sassMiddleware = require("node-sass-middleware");
 
 app.use(sassMiddleware({
-  src: __dirname + '/public',
+  src: __dirname + '/public/',
   dest: '/temp'
 }));
 
