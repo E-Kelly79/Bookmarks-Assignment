@@ -3,13 +3,13 @@
     {
       "id": "01",
       "title": "HTML Resources",
-      "theImage": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Ffrothtml5.jpg?1519317628754",
+      "theImage": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2FHTML5.png?1520464146521",
       "bookmarks": [
         {
           "id": "04",
-          "title": "W3Schools",
-          "link": "",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2FW3Schools.png?1519316565196"
+          "title": "Coder Dojo",
+          "link": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fcoder.png?1520464333658",
+          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fcoder.png?1520464333658"
         },
         {
           "id": "05",
