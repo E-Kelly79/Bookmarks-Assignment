@@ -65,7 +65,7 @@ body{
     text-decoration: none;
     border-bottom: 1px solid $color-primary;
     padding:3px;
-    transation: all .2s;
+    transition: all .4s;
   }
   
   &:hover{
@@ -78,6 +78,19 @@ body{
   &:active{
     box-shadow: 0 .5rem 1rem rgba($black, .2);
     transform: translateY(0px);
+  }
+}
+
+/*Menu*/
+.menu-header{
+   a{
+     font-size:2rem;  
+  }
+}
+
+.menu-links{
+   a{
+     font-size:1.8rem;
   }
 }
 
@@ -96,6 +109,7 @@ body{
      color: transparent;
      letter-spacing:2px;
      transition: all .3s;
+     text-shadow: .5rem 1rem 2rem rgba($black, .4);
     
      &:hover{
         transform:skewY(5deg) skewX(10deg);
