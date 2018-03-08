@@ -24,7 +24,8 @@ body{
 }
 
 .center-text{text-align:center;}
-.margin-bottom{margin-bottom:}
+.margin-bottom{margin-bottom:5rem;}
+.para-margin-bottom{margin-bottom: 3rem;}
 
 
 .info-section{
@@ -40,7 +41,6 @@ body{
      -webkit-background-clip: text;
      color: transparent;
      letter-spacing:2px;
-     
      transition: all .3s;
     
      &:hover{
@@ -49,4 +49,14 @@ body{
     }
     
   }
+  
+  .heading-tree{
+    font-size:1.6rem;
+    font-weight:700;
+    text-transform: uppercase:
+  }
+  
+  .para{
+   font-size:1.6rem;
+  } 
 }
