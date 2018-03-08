@@ -27,8 +27,8 @@ body{
 
 
 .center-text{text-align:center;}
-.margin-bottom{margin-bottom:5rem;}
-.heading-margin-bottom{margin-bottom: 2rem;}
+.big-margin-bottom{margin-bottom:8rem;}
+.small-margin-bottom{margin-bottom: 2rem;}
 
 /*Button Styles*/
 .btn{
@@ -82,6 +82,7 @@ body{
 }
 
 
+/*Home Page*/
 .info-section{
     padding:8rem 0;
   
@@ -97,7 +98,7 @@ body{
      transition: all .3s;
     
      &:hover{
-        transform:skewY(10deg) skewX(10deg);
+        transform:skewY(5deg) skewX(10deg);
         text-shadow: .5rem 1rem 2rem rgba($black, .2);
     }
   }
@@ -115,6 +116,7 @@ body{
      margin-bottom:3rem; 
     }
   }
+}
   
   .gallery{
     position: relative;
@@ -127,11 +129,11 @@ body{
       z-index:10;
       transition: all .3s;
       outline-offset:1rem;
-      tra
+    
       
       &--1{
        left:0;
-      top:-2rem;
+       top:-2rem;
       }
       
       &--2{
@@ -151,8 +153,9 @@ body{
         z-index:20;
       }
     }
+    
     &:hover &__photo:not(:hover){
-      transform: scale(.95);
+      transform: scale(.9);
     }
   }
-}
+
