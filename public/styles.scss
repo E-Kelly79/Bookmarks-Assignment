@@ -36,6 +36,8 @@ body{
 
 
 
+
+
 /*Button Styles*/
 .btn{
   &:link,
@@ -107,11 +109,15 @@ body{
   }
 }
 
- .heading-tree{
-    font-size:1.6rem;
-    font-weight:700;
-    text-transform: uppercase;
-  }
+.heading-tree{
+  font-size:1.6rem;
+  font-weight:700;
+  text-transform: uppercase;
+}
+
+#heading{
+ font-size:2.5rem; 
+}
 
 
 /*Menu*/
