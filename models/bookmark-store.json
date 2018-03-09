@@ -41,19 +41,25 @@
           "id": "07",
           "title": "Piano Concerto No. 0",
           "link": "Beethoven",
-          "image": "https://cdn.glitch.com/c40293fa-9f2b-476b-8705-053345da2a54%2FBeethoven_3.jpg?1518482408419"
+          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcolors.jpg?1520597268625"
         },
         {
           "id": "08",
           "title": "Piano Concerto No. 4",
           "link": "Beethoven",
-          "image": "https://cdn.glitch.com/c40293fa-9f2b-476b-8705-053345da2a54%2FBeethoven_3.jpg?1518482408419"
+          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcss3.jpg?1520597268775"
         },
         {
           "id": "09",
           "title": "Piano Concerto No. 6",
           "link": "Beethoven",
-          "image": "https://cdn.glitch.com/c40293fa-9f2b-476b-8705-053345da2a54%2FBeethoven_3.jpg?1518482408419"
+          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcsscode.jpg?1520597269039"
+        },
+        {
+          "id": "14",
+          "title": "Piano Concerto No. 6",
+          "link": "Beethoven",
+          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fflexbox.png?1520597269987"
         }
       ]
     },
