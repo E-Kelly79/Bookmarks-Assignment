@@ -51,14 +51,14 @@
         },
         {
           "id": "09",
-          "title": "Piano Concerto No. 6",
-          "link": "Beethoven",
+          "title": "Media Quiries",
+          "link": "https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php",
           "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcsscode.jpg?1520597269039"
         },
         {
           "id": "14",
-          "title": "Piano Concerto No. 6",
-          "link": "Beethoven",
+          "title": "Flexbox",
+          "link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
           "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fflexbox.png?1520597269987"
         }
       ]
@@ -81,10 +81,17 @@
           "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2FJuiceShop_Logo.png?1520603928827"
         },
         {
+          "id": "15",
+          "title": "Piano Concerto No. 4",
+          "link": "",
+          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fjavascript2.png?1520614338788"
+        },
+        {
           "id": "12",
           "title": "Piano Concerto No. 6",
           "link": "Beethoven",
           "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcode.jpg?1520603928961"
+          
         }
       ]
     },
