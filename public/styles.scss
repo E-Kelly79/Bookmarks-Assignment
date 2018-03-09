@@ -108,6 +108,7 @@ body{
   letter-spacing:2px;
   transition: all .3s;
   text-shadow: .5rem 1rem 2rem rgba($black, .4);
+  animation: moveInLeft 2s ease-out;
     
   &:hover{
     transform:skewY(5deg) skewX(10deg);
@@ -163,6 +164,7 @@ body{
       z-index:10;
       transition: all .3s;
       outline-offset:1rem;
+      animation: moveInBottom 2s ease-out;
     
       
       &--1{
@@ -196,14 +198,34 @@ body{
 }
 
 /*Animations*/
-@keyframes moveinLeft{
+@keyframes moveInLeft{
     0%{
       opacity: 0;
-      tranform: translateX(0);
+      transform: translateX(-200px);
     }
     
     80%{
-  }
-      
+      transform: translateX(10px);
+    }
   
+    100%{
+      opacity:1;
+      transform: translateX(0px);
+    }
+}
+
+@keyframes moveInBottom{
+  0%{
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    
+    80%{
+      transform: translateY(10px);
+    }
+  
+    100%{
+      opacity:1;
+      transform: translateY(0px);
+    }
 }
