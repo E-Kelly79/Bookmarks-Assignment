@@ -164,7 +164,8 @@ a{
       z-index:10;
       transition: all .3s;
       outline-offset:1rem;
-      animation: moveInBottom 2s ease-out;
+      animation: moveInBottom 1s ease-out;
+      animation-delay: 1s;
     
       
       &--1{
@@ -217,7 +218,7 @@ a{
 @keyframes moveInBottom{
   0%{
       opacity: 0;
-      transform: translateY(-200px);
+      transform: translateY(200px);
     }
     
     80%{
