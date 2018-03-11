@@ -5,6 +5,7 @@ $black: #000;
 $white:#fff;
 
 
+/*Reset All margins and paddings*/
 *,
 *::after,
 *::before{
@@ -13,6 +14,15 @@ $white:#fff;
  box-sizing:inherit; 
 }
 
+/*Utils*/
+.align-middle{margin: 0 auto;}
+.center-text{text-align:center;}
+.big-margin-bottom{margin-bottom:8rem;}
+.small-margin-bottom{margin-bottom: 2rem;}
+.small-margin-top{margin-top: 2rem;}
+.big-margin-top{margin-top:8rem;}
+
+/*1rem equals 10px;*/
 html{
   font-size: 62.5%;
   
@@ -28,19 +38,12 @@ body{
   
 }
 
-
-/*Utils*/
-.align-middle{margin: 0 auto;}
-.center-text{text-align:center;}
-.big-margin-bottom{margin-bottom:8rem;}
-.small-margin-bottom{margin-bottom: 2rem;}
-.small-margin-top{margin-top: 2rem;}
-.big-margin-top{margin-top:8rem;}
-
-
-
 a{
   font-size: 2rem;
+}
+
+address{
+ font-size: 2rem; 
 }
 
 
@@ -70,7 +73,6 @@ a{
   
 }
 
-
 .btn-text{
   &:link,
   &:visited{
@@ -95,6 +97,8 @@ a{
     transform: translateY(0px);
   }
 }
+
+
 
 /*Heading*/
 .heading-secondary{
@@ -127,6 +131,7 @@ a{
 }
 
 
+
 /*Menu*/
 .menu-header{
    a{
@@ -139,6 +144,7 @@ a{
      font-size:1.8rem;
   }
 }
+
 
 
 /*Home Page*/
@@ -194,6 +200,7 @@ a{
   }
 
 }/*end info section*/
+
 
 /*Animations*/
 @keyframes moveInLeft{
