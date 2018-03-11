@@ -1,6 +1,6 @@
 /*Variables*/
 $color-primary: #a473d5;
-$color-secondary: #7fab4c;
+$color-secondary: #775a93;
 $black: #000;
 $white:#fff;
 
@@ -22,6 +22,7 @@ $white:#fff;
 .small-margin-top{margin-top: 2rem;}
 .big-margin-top{margin-top:8rem;}
 
+
 /*1rem equals 10px;*/
 html{
   font-size: 62.5%;
@@ -38,8 +39,13 @@ body{
   
 }
 
+.button{
+ margin-right:1rem; 
+}
+
 a{
   font-size: 2rem;
+
 }
 
 address{
