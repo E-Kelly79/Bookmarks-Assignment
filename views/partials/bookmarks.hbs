@@ -16,15 +16,17 @@
               {{title}}
             </div>
             <div class="description">
-              <!--<p>Total Duration: {{duration}} </p>-->
             </div>
           </div>
+          
           <div class="extra content">
             <div class="ui two buttons">
-              <a href="/bookmark/{{id}}" class="ui icon  purple button right-margin">
+              {{#if bookmark}}
+              <a href="/bookmark/{{id}}" class="ui icon  purple button ">
                 <i class="icon folder open"></i>
               </a>
-              <a href="/dashboard/deletebookmark/{{id}}" class="ui icon red button delete-bookmarks right-margin">
+              {{/if}}
+              <a href="/dashboard/deletebookmark/{{id}}" class="ui icon red button delete-bookmarks ">
                 <i class="icon trash"></i>
               </a>
             </div>
