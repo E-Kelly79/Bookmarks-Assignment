@@ -15,5 +15,8 @@ router.get('/bookmark/:id/deletelink/:linkid', bookmark.deleteLink);
 router.get('/dashboard/deletebookmark/:id', dashboard.deleteBookmark);
 router.get('/about', about.index);
 
+router.post('/bookmark/:id/addbookmark', bookmark.addBookmark);
+router.post('/dashboard/addBookCollections', dashboard.addBookCollection);
+
 
 module.exports = router;
