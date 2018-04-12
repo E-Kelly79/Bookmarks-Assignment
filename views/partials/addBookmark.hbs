@@ -1,5 +1,5 @@
-<form class="ui huge stacked segment form" action="/bookmark/{{bookmark.id}}/addbookmark" method="POST">
-  <div class="two fields">
+<form class="ui huge stacked segment form" action="/bookmark/{{bookmark.id}}/addbookmark" method="POST"  enctype="multipart/form-data">
+  <div class="three fields">
     <div class="field">
       <label>Title</label>
       <input placeholder="Title" type="text" name="title" autofocus required>
@@ -7,6 +7,10 @@
     <div class="field">
       <label>Link</label>
       <input placeholder="Link" type="text" name="link" required>
+    </div>
+    <div class="field">
+      <label>Image</label>
+      <input placeholder="Link" type="file" name="image" required>
     </div>
   </div>
   <button class="ui green submit button">Add Song</button>

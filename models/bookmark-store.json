@@ -1,138 +1,51 @@
 {
   "myBookmarkCollection": [
     {
-      "id": "01",
-      "title": "HTML Resources",
-      "theImage": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2FHTML5.png?1520464146521",
-      "bookmarks": [
-        {
-          "id": "04",
-          "title": "Coder Dojo",
-          "link": "https://coderdojo.com/",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fcoder.png?1520464333658"
-        },
-        {
-          "id": "05",
-          "title": "Code Academdy",
-          "link": "https://www.codecademy.com/",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2FCodeacademy.jpg?1520464829174"
-        },
-        {
-          "id": "06",
-          "title": "Free Code Camp",
-          "link": "https://www.freecodecamp.org/",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fcodecamp.jpg?1520465305010"
-        },
-        {
-          "id": "13",
-          "title": "HTML5 Goddies",
-          "link": "https://www.htmlgoodies.com/html5/index.php",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fthumbnails%2Fhtml5blue.png?1520465450341"
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "title": "CSS3",
-      "theImage": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fdownload.png?1520465635486",
-      "bookmarks": [
-        {
-          "id": "07",
-          "title": "Css Color Codes",
-          "link": "https://www.quackit.com/css/css_color_codes.cfm",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcolors.jpg?1520597268625"
-        },
-        {
-          "id": "08",
-          "title": "CSS Tricks",
-          "link": "https://css-tricks.com/",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcss3.jpg?1520597268775"
-        },
-        {
-          "id": "09",
-          "title": "Media Quiries",
-          "link": "https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcsscode.jpg?1520597269039"
-        },
-        {
-          "id": "14",
-          "title": "Flexbox",
-          "link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fflexbox.png?1520597269987"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "title": "Javascript",
-      "theImage": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fjavascript.png?1520465950663",
-      "bookmarks": [
-        {
-          "id": "10",
-          "title": "ReactJs",
-          "link": "https://www.tutorialspoint.com/reactjs/index.htm",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Freact.jpg?1520603928485"
-        },
-        {
-          "id": "11",
-          "title": "Javascript Info",
-          "link": "https://javascript.info/",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2FJuiceShop_Logo.png?1520603928827"
-        },
-        {
-          "id": "15",
-          "title": "Javascript Basics",
-          "link": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fjavascript2.png?1520614338788"
-        },
-        {
-          "id": "12",
-          "title": "Javascript Dog",
-          "link": "http://htmldog.com/guides/javascript/",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fcode.jpg?1520603928961"
-        }
-      ]
-    },
-    {
-      "id": "17",
-      "title": "NodeJs ",
-      "theImage": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fnode.png?1520466061677",
-      "bookmarks": [
-        {
-          "id": "10",
-          "title": "Node Beginner",
-          "link": "https://www.w3schools.com/nodejs/default.asp",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fnode.png?1520616202443"
-        },
-        {
-          "id": "11",
-          "title": "NodeJS Intermediate",
-          "link": "https://www.pluralsight.com/paths/node-js",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fnode2.jpg?1520616192960"
-        },
-        {
-          "id": "16",
-          "title": "NodeJS Advanced",
-          "link": "https://www.youtube.com/playlist?list=PLw5h0DiJ-9PAfwX0dGsQqCXXbTwQyXP8E",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fnode3.jpg?1520616198162"
-        },
-        {
-          "id": "12",
-          "title": "Mongo DB",
-          "link": "https://www.tutorialspoint.com/mongodb/index.htm",
-          "image": "https://cdn.glitch.com/5caa6af6-c275-45f7-9ca0-565583180c91%2Fmongo.png?1520616193788"
-        }
-      ]
-    },
-    {
-      "id": "ed780f17-fca0-4aff-aa9e-cff92b38b053",
-      "title": "gjfthjhjghj",
+      "id": "dc3fbf0b-0748-46dd-a8f5-ab804f7bb687",
+      "title": "Test",
       "bookmarks": []
     },
     {
-      "id": "6ec3e797-0352-43ec-b8bb-633273953a24",
-      "title": "ghjgfkjfhjhg",
+      "id": "52945547-d424-4a09-90ba-6ea58720c1a9",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Homers Bookmarks",
       "bookmarks": []
+    },
+    {
+      "id": "8453b2ce-df4d-4581-aa1a-6e8025dfeec9",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "dfdgsd",
+      "bookmarks": []
+    },
+    {
+      "id": "0fd4a9e5-8fde-4b96-a251-848a166fd52c",
+      "userid": "b97c55a7-1c7b-4afc-ba2f-1dfbe0fb50f5",
+      "title": "hgfdhdfh",
+      "bookmarks": [
+        {
+          "id": "8bb1d7c4-6e33-46b9-a38c-e00c607215f3",
+          "title": "dhfsgfghfdg",
+          "link": "dhfgfgdh"
+        },
+        {
+          "id": "4a9f4da5-df7e-42d4-8c4e-203bb954da37",
+          "title": "nvjhj",
+          "link": "fgjghjgyj",
+          "image": "http://res.cloudinary.com/ddelpecqq/image/upload/c_scale,w_1200/v1523398105/Bearer-of-the-Heavens-MtG-Art.0.0.jpg"
+        }
+      ]
+    },
+    {
+      "id": "da534aa6-3e02-4c23-bf19-09dbe980426c",
+      "userid": "90b28e1f-26de-4aa4-b12c-e338092770fb",
+      "title": "jhyhyjhtyj",
+      "bookmarks": [
+        {
+          "id": "19059b6c-1810-4a7c-ac88-e3a85c0603b9",
+          "title": "fjghj",
+          "link": "gfj"
+        }
+      ]
     }
   ]
 }

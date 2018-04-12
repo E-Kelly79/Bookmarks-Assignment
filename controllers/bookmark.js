@@ -1,30 +1,27 @@
 'use strict';
 
-const logger = require('../utils/logger');
 const uuid = require('uuid');
+const logger = require('../utils/logger');
 const bookmarkCollection = require('../models/bookmark-store');
+const accounts = require ('./accounts.js');
 
 const bookmark = {
   index(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);  
     const bookid = request.params.id;
     logger.debug('bookmark id = ', bookid);
-    const viewData = {
-      title: 'Bookmarks',
-      bookmark: bookmarkCollection.getBookmark(bookid),
-    };
+    if (loggedInUser) {
+      const viewData = {
+        title: 'Bookmarks',
+        bookmark: bookmarkCollection.getBookmark(bookid),
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      };
+    
     response.render('bookmarks', viewData);
-  },
-  
-  addBookmark(request, response){
-    const bookmarkId = request.params.id;
-    const bookmark = bookmarkCollection.getBookmark(bookmarkId);
-    const newBookmark = {
-      id: uuid(),
-      title: request.body.title,
-      link: request.body.link,
-    };
-    bookmarkCollection.addBookmark(bookmarkId, newBookmark);
-    response.redirect('/bookmark/' + bookmarkId);
+    }else{
+      response.redirect('/');
+    }
+    
   },
   
   deleteLink(request, response) {
@@ -34,6 +31,21 @@ const bookmark = {
     bookmarkCollection.removeLink(bookmarkId, mybookmark);
     response.redirect('/bookmark/' + bookmarkId);
   },
+  
+  addBookmark(request, response){
+    const bookmarkId = request.params.id;
+    const bookmark = bookmarkCollection.getBookmark(bookmarkId);
+    const newBookmark = {
+      id: uuid(),
+      title: request.body.title,
+      link: request.body.link,
+      theImage:request.body.image,
+    };
+    bookmarkCollection.addBookmark(bookmarkId, newBookmark);
+    response.redirect('/bookmark/' + bookmarkId);
+  },
+  
+  
   
 
 };
