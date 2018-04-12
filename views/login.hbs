@@ -1,0 +1,14 @@
+{{> welcomemenu id='login' }}
+
+<div id="login-wrapper">
+  <div class="login">
+	<h1>Login</h1>
+    <form action="/authenticate" method="POST">
+    	<input type="text" name="email" placeholder="Email" required="required" />
+      <input type="password" name="password" placeholder="Password" required="required" />
+      <button type="submit" class="ui fluid blue button">Log me in</button>
+    </form>
+  </div>
+</div>
+
+

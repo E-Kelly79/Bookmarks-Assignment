@@ -4,7 +4,7 @@ const logger = require('../utils/logger');
 const JsonStore = require('./json-store');
 
 const bookmarkStore = {
-  store: new JsonStore('models/bookmark-store.json', {myBookmarkCollection: []}),
+  store: new JsonStore('./models/bookmark-store.json', {myBookmarkCollection: []}),
   collection: 'myBookmarkCollection',
   
   getAllBookmarks(){
@@ -25,7 +25,7 @@ const bookmarkStore = {
   
   removeBookmark(id){
     const bookmark = this.getBookmark(id);
-    this.store.remove(this.collection.bookmark);
+    this.store.remove(this.collection, bookmark);
   },
   
   
@@ -40,6 +40,10 @@ const bookmarkStore = {
     const bookmark = this.getBookmark(id);
     const link = bookmark.bookmarks;
     _.remove(link, {id: linkid});
+  },
+  
+  getUserBookmarks(userid){
+    return this.store.findBy(this.collection, {userid: userid});
   },
   
   

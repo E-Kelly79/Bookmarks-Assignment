@@ -15,27 +15,28 @@
   </address>
   
   <button class="ui button purple contact">
-    Contact Us
+    Leave Us A Message
   </button>
+  {{> listcomments }}
 </section>
 
 
 <div class="ui basic modal">
   <div class="ui icon header">
     <i class="archive icon"></i>
-    Archive Old Messages
+    Leave A Message 
   </div>
   <div class="content">
-    <p>Your inbox is getting full, would you like us to enable automatic archiving of old messages?</p>
-  </div>
-  <div class="actions">
-    <div class="ui red basic cancel inverted button">
-      <i class="remove icon"></i>
-      No
+    <form class="ui stacked  segment form" action="/about/addcomment" method="POST">
+    <div class="field">
+      <label>Name</label>
+      <input placeholder="Name" type="text" name="name">
     </div>
-    <div class="ui green ok inverted button">
-      <i class="checkmark icon"></i>
-      Yes
+    <div class="field">
+      <label>Comment</label>
+      <textarea placeholder="Please enter your comment" type="text" name="comment"></textarea>
     </div>
+  <button class="ui green submit button">Add Comment</button>
+</form>
   </div>
 </div>

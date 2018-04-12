@@ -1,0 +1,14 @@
+{{> welcomemenu id="signup"}}
+
+<div id="register-wrapper">
+  <div class="login">
+	<h1>Register</h1>
+    <form action="/register" method="POST">
+    	<input placeholder="First Name" type="text" name="firstName" autofocus required>
+      <input placeholder="Last Name" type="text"  name="lastName" required>
+      <input placeholder="Email" type="text" name="email" required>
+      <input placeholder="Password "type="password" name="password" required>
+      <button type="submit" class="ui fluid blue button">Sign me up</button>
+    </form>
+  </div>
+</div>

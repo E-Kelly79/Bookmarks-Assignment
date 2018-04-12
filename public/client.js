@@ -7,7 +7,8 @@ $(".delete-bookmarks").click(function() {
   return confirm('Really delete this folder?');
 });
 
-$('.contcat').click(function(){
-    .modal('show');
-  }
+ $('.contact').click(function(){
+   $('.ui.basic.modal')
+  .modal('show');
+ });
 
